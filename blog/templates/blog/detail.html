@@ -21,7 +21,8 @@
                                 <h1 class="title">{{ post.title }}</h1>
                                 <p><strong>{{post.intro}}</strong></p>
 
-                                <p>{{ post.body}}</p>
+<!--                                 <p>{{ post.body}}</p> -->
+                                <p>{{ post.body|linebreaks }}</p>        
                                 <p><small>Category: <a href="{% url 'category_detail' post.category.slug%}">{{post.category}}</a></small></p>
 
                                 <hr>
