@@ -25,7 +25,7 @@ class Post(models.Model):
     category = models.ForeignKey(Category, related_name='posts', on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     slug = models.SlugField()
-    intro = models.TextField()
+    # intro = models.TextField()
     body = models.TextField()
     created_at = models.DateTimeField(default =timezone.now)
     status = models.CharField(max_length=10, choices=CHOICES_STATUS,default=ACTIVE)
