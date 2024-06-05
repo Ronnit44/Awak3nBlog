@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 class Category(models.Model):
     title = models.CharField(max_length=255)
@@ -26,7 +27,7 @@ class Post(models.Model):
     slug = models.SlugField()
     intro = models.TextField()
     body = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(default =timezone.now)
     status = models.CharField(max_length=10, choices=CHOICES_STATUS,default=ACTIVE)
     image = models.ImageField(upload_to='uploads/',blank=True,null=True)
 
@@ -50,5 +51,8 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
 
 
