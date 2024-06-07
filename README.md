@@ -1,4 +1,4 @@
-This repository contains the source code for a blogging platform built with Python using the Django web framework.
+This repository contains the source code for a blogging platform which I have built with Python using the Django web framework.
 
 #Installation
 
