@@ -6,7 +6,7 @@ This repository contains the source code for a blogging platform which I have bu
 
 2. Change to the project directory
 
-3. Create a virtual environment and activate it
+3. Create a virtual environment and activate it(refer to this article for help:(https://www.geeksforgeeks.org/clone-and-run-a-django-project-from-github/)
 
 4. Install the required dependencies and setup the database
 
