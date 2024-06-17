@@ -5,7 +5,7 @@ from .models import Post,Category
 
 # def detail(request,category_slug,slug):
 #     post = get_object_or_404(Post,slug=slug,status=Post.ACTIVE)
-<<<<<<< HEAD
+
 #
 #     if request.method =="POST":
 #         form = CommentForm(request.POST)
@@ -53,8 +53,7 @@ def detail(request, category_slug, slug):
         form = CommentForm()
 
     return render(request, 'blog/detail.html', {'post': post, 'form': form})
-<<<<<<< HEAD
-=======
+
 
 >>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
 def category(request,slug):
@@ -65,11 +64,11 @@ def category(request,slug):
 def search(request):
     query = request.GET.get('query','')
 
-<<<<<<< HEAD
+
     posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) |Q(body__icontains=query))
 =======
     posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) | Q(body__icontains=query))
->>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
+
     return render(request,'blog/search.html',{'posts':posts,'query':query})
 
 
