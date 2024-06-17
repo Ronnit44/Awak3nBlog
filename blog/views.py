@@ -5,6 +5,7 @@ from .models import Post,Category
 
 # def detail(request,category_slug,slug):
 #     post = get_object_or_404(Post,slug=slug,status=Post.ACTIVE)
+<<<<<<< HEAD
 #
 #     if request.method =="POST":
 #         form = CommentForm(request.POST)
@@ -21,6 +22,23 @@ from .models import Post,Category
 #
 #     return render(request,'blog/detail.html', {'post' : post,'form': form})
 
+=======
+
+#     if request.method =="POST":
+#         form = CommentForm(request.POST)
+
+#         if form.is_valid():
+#             comment = form.save(commit=False)
+#             comment.post=post
+#             comment.save()
+
+#             return redirect('post_detail',category_slug = category_slug,slug=slug)
+
+#     else:
+#         form = CommentForm()
+
+#     return render(request,'blog/detail.html', {'post' : post,'form': form})
+>>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
 def detail(request, category_slug, slug):
     post = get_object_or_404(Post, slug=slug, status=Post.ACTIVE, category__slug=category_slug)
 
@@ -35,6 +53,10 @@ def detail(request, category_slug, slug):
         form = CommentForm()
 
     return render(request, 'blog/detail.html', {'post': post, 'form': form})
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
 def category(request,slug):
     category = get_object_or_404(Category,slug=slug)
     posts = category.posts.filter(status=Post.ACTIVE)
@@ -43,7 +65,11 @@ def category(request,slug):
 def search(request):
     query = request.GET.get('query','')
 
+<<<<<<< HEAD
     posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) |Q(body__icontains=query))
+=======
+    posts = Post.objects.filter(status=Post.ACTIVE).filter(Q(title__icontains=query) | Q(body__icontains=query))
+>>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
     return render(request,'blog/search.html',{'posts':posts,'query':query})
 
 

@@ -1,6 +1,9 @@
 from django.db import models
 from django.utils import timezone
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
 
 class Category(models.Model):
     title = models.CharField(max_length=255)
@@ -31,8 +34,13 @@ class Post(models.Model):
     # intro = models.TextField()
     body = models.TextField()
     created_at = models.DateTimeField(default =timezone.now)
+<<<<<<< HEAD
     status = models.CharField(max_length=10, choices=CHOICES_STATUS, default=ACTIVE)
     image = models.ImageField(upload_to='uploads/', blank=True, null=True)
+=======
+    status = models.CharField(max_length=10, choices=CHOICES_STATUS,default=ACTIVE)
+    image = models.ImageField(upload_to='uploads/',blank=True,null=True)
+>>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
 
     class Meta:
         ordering = ('-created_at',)
@@ -53,3 +61,8 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.name
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
