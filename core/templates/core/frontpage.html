@@ -14,7 +14,7 @@
                     <div class="column is-8 is-offset-2">
                         {% for post in posts %}
                             <div class="content is-medium">
-<<<<<<< HEAD
+
                                 <a href="{% url 'post_detail' post.category.slug post.slug %}">
 
 <!--                                    {% if post.image %}-->
@@ -29,7 +29,7 @@
                                             <img src="{{post.image.url}}">
                                         </figure>
                                     {% endif %}
-=======
+
                                 <a href ="{% url 'post_detail' post.category.slug post.slug %}">
 <!--                                     {% if post.image %}
                                         <figure class="image">
@@ -43,12 +43,12 @@
                                                 <img src="{{post.image.url}}">
                                             </figure>
                                         {% endif %}
->>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
+
                                     <p>{{post.intro}}</p>
                                 </a>
                             </div>
                         {% endfor %}
-<<<<<<< HEAD
+
                     </div>
                 </div>
             </section>
@@ -56,7 +56,7 @@
     </div>
 </section>
 {% endblock %}
-=======
+
                       </div>
                      </div>
                     </section>
@@ -64,4 +64,4 @@
             </div>
         </section>
 {% endblock %}
->>>>>>> 5a4eed5039ef24126696f1c0d815e0ccfe89f614
+
