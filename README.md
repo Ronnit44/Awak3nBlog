@@ -2,7 +2,7 @@ This repository contains the source code for a blogging platform which I have bu
 
 #Installation
 
-1. Clone the repository to your local machine
+1. Clone the repository to your System
 
 2. Change to the project directory
 
