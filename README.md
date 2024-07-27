@@ -15,3 +15,7 @@ The source code for a blogging platform I created with Python and the Django web
 6. Run the development server
 
 7. Access the blogging platform in your web browser at 'http://localhost:8000' 
+
+
+https://github.com/user-attachments/assets/e0396eca-6ffe-4522-b11d-e490819bf8f3
+
