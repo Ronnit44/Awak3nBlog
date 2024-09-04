@@ -1,5 +1,7 @@
 The source code for a blogging platform I created with Python and the Django web framework is available in this repository.
 
+Implemented features for user authentication, content creation, and comment management.
+
 #Installation
 
 1. Clone the repository to your System
