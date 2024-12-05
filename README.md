@@ -1,5 +1,7 @@
 The source code for a blogging platform I created with Python and the Django web framework is available in this repository.
 
+https://github.com/user-attachments/assets/e0396eca-6ffe-4522-b11d-e490819bf8f3
+
 Implemented features for user authentication, content creation, and comment management.
 
 #Installation
@@ -19,5 +21,5 @@ Implemented features for user authentication, content creation, and comment mana
 7. Access the blogging platform in your web browser at 'http://localhost:8000' 
 
 
-https://github.com/user-attachments/assets/e0396eca-6ffe-4522-b11d-e490819bf8f3
+
 
