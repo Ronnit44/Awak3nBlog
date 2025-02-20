@@ -2,7 +2,7 @@ The source code for a blogging platform I created with Python and the Django web
 
 https://github.com/user-attachments/assets/e0396eca-6ffe-4522-b11d-e490819bf8f3
 
-Implemented features for user authentication, content creation, and comment management.
+Implemented features for content creation, search capabilities and comment management.
 
 #Installation
 
