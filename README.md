@@ -14,11 +14,17 @@ Implemented features for content creation, search capabilities and comment manag
 
 4. Install the required dependencies and setup the database
 
-5. Create a superuser account
+       pip install -r requirements.txt
 
-6. Run the development server
+6. Create a superuser account
 
-7. Access the blogging platform in your web browser at 'http://localhost:8000' 
+       python manage.py createsuperuser 
+
+8. Run the development server
+
+       python manage.py runserver 
+
+9. Access the blogging platform in your web browser at 'http://localhost:8000' 
 
 
 
