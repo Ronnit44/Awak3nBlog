@@ -2,7 +2,7 @@
 {% block title %} {{post.title}} | {% endblock %}
 
 {% block content %}
-<section class="hero">
+<section class="hero" xmlns="http://www.w3.org/1999/html">
     <div class="hero-body">
         <div class="container">
             <section class="section">
@@ -17,8 +17,8 @@
 
                         <div class="content is-medium">
 
-                            <h2 class="subtitle is-4">{{post.created_at|date:'M-d-Y' }}</h2>
-                            <h1 class="title">{{ post.title }}</h1>
+                            <em><h2 class="subtitle is-4">{{post.created_at|date:'M-d-Y' }}</h2></em>
+                            <u><em><h1 class="title">{{ post.title }}</h1></em></u>
 
 
                             <p><strong>{{post.intro}}</strong></p>
@@ -28,7 +28,6 @@
 <!--                                                                    </figure>-->
 <!--                                                            {% endif %}-->
 
-                                                            <p>{{ post.body}}</p>
                             <p>{{ post.body|linebreaks }}</p>
 
 
@@ -42,6 +41,7 @@
                             <form method="post" class="mb-6">
                                 {% csrf_token%}
                                 {{form.as_p}}
+
 
 
                                 <div class="field">
