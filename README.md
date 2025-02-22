@@ -1,8 +1,12 @@
-This repository contains the source code for a blogging platform which I have built with Python using the Django web framework.
+The source code for a blogging platform I created with Python and the Django web framework is available in this repository.
+
+https://github.com/user-attachments/assets/e0396eca-6ffe-4522-b11d-e490819bf8f3
+
+Implemented features for content creation, search capabilities and comment management.
 
 #Installation
 
-1. Clone the repository to your local machine
+1. Clone the repository to your System
 
 2. Change to the project directory
 
@@ -15,3 +19,7 @@ This repository contains the source code for a blogging platform which I have bu
 6. Run the development server
 
 7. Access the blogging platform in your web browser at 'http://localhost:8000' 
+
+
+
+
