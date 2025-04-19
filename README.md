@@ -10,7 +10,7 @@ Implemented features for content creation, search capabilities and comment manag
 
 2. Change to the project directory
 
-3. Create a virtual environment and activate it(refer to this article for help:(https://www.geeksforgeeks.org/clone-and-run-a-django-project-from-github/))
+3. Create a virtual environment and activate it(refer to this article for help: https://www.geeksforgeeks.org/clone-and-run-a-django-project-from-github/)
 
 4. Install the required dependencies and setup the database
 
