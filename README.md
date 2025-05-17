@@ -1,10 +1,10 @@
-The source code for a blogging platform I created with Python and the Django web framework is available in this repository.
+This repository contains the source code for a personal blogging platform built with Python and Django web framework.
 
 https://github.com/user-attachments/assets/31fdd367-2f9f-4b26-bbda-8890e4149912
 
 Implemented features for content creation, search capabilities and comment management.
 
-#Installation
+# Installation
 
 1. Clone the repository to your System
 
